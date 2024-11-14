@@ -4,17 +4,17 @@
 
 ## Project 1 of UoB Data Bootcamp - Group 2
 
-## Content:
-1. [Project aim](#1-project-aim)
-2. [Data collection and preparation](#2-data-collection-and-preparation)
+## Contents
+1. [Project Aim](#1-project-aim)
+2. [Data Collection and Preparation](#2-data-collection-and-preparation)
 3. [Definitions](#3-definitions)
-4. [Main conclusions](#4-main-conclusions)
-5. [Set up and running the code](#5-set-up-and-running-the-code)
-6. [Repository structure](#6-repository-structure)
-7. [Source code](#7-source-code)
+4. [Main Conclusions](#4-main-conclusions)
+5. [Setting up and Running the Code](#5-setting-up-and-running-the-code)
+6. [Repository Structure](#6-repository-structure)
+7. [Source Code](#7-source-code)
 8. [Collaborators/Team](#8-collaboratorsteam)
 
-## 1. Project aim
+## 1. Project Aim
 In this project, we aimed to understand **whether music listening habits have changed** in the last 6 years. 
 
 There are two main reasons that lead us to believe music listening habits might have changed:
@@ -28,7 +28,7 @@ We thus hypothesise that **listening habits are likely to have changed**, and as
 4. How have other track features changed?
 
 
-## 2. Data collection and preparation
+## 2. Data Collection and Preparation
 Every year, Spotify releases a playlist with the top 100 hit songs for that year. 
 
 ![Screenshot of Top hits 2017 playlist by Spotify](readme_images/playlist.png)
@@ -84,7 +84,7 @@ The information obtained from Spotipy was then combined into a single dataframe.
 > A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
 
 
-## 4. Main conclusions
+## 4. Main Conclusions
 As we hypothesised, **music habits seem to have changed in the past 6 years**. In our exploratory data analysis we found that:
 1. Whilst pop and rap consistently occupy the first two positions at the top of the most listened-to genres, a lot of sub-genres of pop have risen around the period of COVID-19.
    
@@ -105,7 +105,7 @@ It is important to bear in mind some limitations to our analyses:
 - Lastly, we chose to analyse the year a song was popular, not when it was released. Looking at songs' release dates might have shown a different picture altogether. 
 
 
-## 5. Set up and running the code
+## 5. Setting up and Running the Code
 ### 1. Install dependencies
 In order to run the files you will need to install the following packages:
 - jupyter notebook `pip install notebook`
@@ -145,7 +145,7 @@ In this repository you can find:
 - ['presentation' folder](presentation) containing the slide deck for the presentation of the project.
 
 
-## 7. Source code
+## 7. Source Code
 - Code in the 'spotipy_data_prep.ipynb' jupyter notebook is based on code shared by the instructor, as well as code from [Spotipy documentation](ttps://spotipy.readthedocs.io/en/2.22.1/) and from [here](https://towardsdatascience.com/extracting-song-data-from-the-spotify-api-using-python-b1e79388d50).
 - Genre analysis: code to we unpack the artist genre column adapted from [here](https://www.learndatasci.com/solutions/python-pandas-dfexplode/).
 - Code to plot subplots based on [matplotlib gallery](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_demo.html).
