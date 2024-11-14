@@ -1,18 +1,18 @@
 # EDA: Have music listening habits changed over the last 6 years? 
 
-![Photo from above of someone listening to music on their hearphones](https://github.com/catisf/Project-1-Group-2/blob/main/readme_images/pexels-kaboompics-com-6399.jpg)
+![Photo from above of someone listening to music on their hearphones](readme_images/pexels-kaboompics-com-6399.jpg)
 
 ## Project 1 of UoB Data Bootcamp - Group 2
 
 ## Content:
-1. [Project aim](https://github.com/catisf/Project-1-Group-2/tree/main#1-project-aim)
-2. [Data collection and preparation](https://github.com/catisf/Project-1-Group-2/tree/main#2-data-collection-and-preparation)
-3. [Definitions](https://github.com/catisf/Project-1-Group-2/tree/main#3-definitions)
-4. [Main conclusions](https://github.com/catisf/Project-1-Group-2/tree/main#4-main-conclusions)
-5. [Set up and running the code](https://github.com/catisf/Project-1-Group-2/tree/main#5-set-up-and-running-the-code)
-6. [Repository structure](https://github.com/catisf/Project-1-Group-2/tree/main#6-repository-structure)
-7. [Source code](https://github.com/catisf/Project-1-Group-2/tree/main#7-source-code)
-8. [Collaborators/Team](https://github.com/catisf/Project-1-Group-2/tree/main#8-collaboratorsteam)
+1. [Project aim](#1-project-aim)
+2. [Data collection and preparation](#2-data-collection-and-preparation)
+3. [Definitions](#3-definitions)
+4. [Main conclusions](#4-main-conclusions)
+5. [Set up and running the code](#5-set-up-and-running-the-code)
+6. [Repository structure](#6-repository-structure)
+7. [Source code](#7-source-code)
+8. [Collaborators/Team](#8-collaboratorsteam)
 
 ## 1. Project aim:
 In this project, we aimed to understand **whether music listening habits have changed** in the last 6 years. 
@@ -31,7 +31,7 @@ We thus hypothesise that **listening habits are likely to have changed**, and as
 ## 2. Data collection and preparation
 Every year, Spotify releases a playlist with the top 100 hit songs for that year. 
 
-![Screenshot of Top hits 2017 playlist by Spotify](https://github.com/catisf/Project-1-Group-2/blob/main/readme_images/playlist.png)
+![Screenshot of Top hits 2017 playlist by Spotify](readme_images/playlist.png)
 
 In order to answer our research questions, we first selected 6 playlists, one for each of the last 6 years. We chose playlists spanning from 2017 to 2022, in order to capture both, any changes preceding the rise of TikTok and the COVID pandemic, as well as any long lasting changes in music listening habits post-COVID. 
 
@@ -52,9 +52,9 @@ Once the playlists were selected, we used the [Spotipy API](https://spotipy.read
 - artist name
 - artist genre
 
-You can find each of these features' definition in the [next section](https://github.com/catisf/Project-1-Group-2/tree/main#3-definitions). 
+You can find each of these features' definition in the [next section](#3-definitions). 
 
-The information obtained from Spotipy was then combined into a single dataframe. The dataframe was carefully inspected for any missing data or duplicates, before being saved as a [.csv file](https://github.com/catisf/Project-1-Group-2/tree/main/output_data). Duplicated songs that were on playlists for different years were kept, as the same song might be in the top for more than one year and that information is relevant for our research questions.
+The information obtained from Spotipy was then combined into a single dataframe. The dataframe was carefully inspected for any missing data or duplicates, before being saved as a [.csv file](output_data). Duplicated songs that were on playlists for different years were kept, as the same song might be in the top for more than one year and that information is relevant for our research questions.
 
 ## 3. Definitions
 [Spotify's Web API](https://developer.spotify.com/documentation/web-api) defines the features we extracted for this project as follows:
@@ -88,13 +88,13 @@ The information obtained from Spotipy was then combined into a single dataframe.
 As we hypothesized, **music habits seem to have changed in the past 6 years**. In our exploratory data analysis we found that:
 1. Whilst pop and rap consistently occupy the first two positions at the top of the most listened-to genres, a lot of sub-genres of pop have risen around the period of COVID-19;
    
-![Plot top 10 genres per year](https://github.com/catisf/Project-1-Group-2/blob/main/readme_images/top_genres_numsongs.png)
+![Plot top 10 genres per year](readme_images/top_genres_numsongs.png)
 
 2. Only 5 artists had a song in the top 100 in every year, indicating people’s preferences change on a yearly base;
    
 3. Songs are getting shorter in general. Song duration correlates strongly with the number of Tik-Tok users, so that the higher the number of Tik-Tok users, the smaller the duration of the songs
    
-![Plot correlation duration vs tik tok users](https://github.com/catisf/Project-1-Group-2/blob/main/readme_images/duration_line_tiktok.png)
+![Plot correlation duration vs tik tok users](readme_images/duration_line_tiktok.png)
 
 4. There has been a downward trend for features such as danceability and energy (songs score lower on these features), but the songs people listen to are becoming more positive (songs score higher on valence).  
 
@@ -135,14 +135,14 @@ client_secret = "ADD YOUR KEY HERE"
 ```
    
 3. Save the 'config.py' file in the 'jupyter_notebooks' folder in your local repository.
-4. Run notebook 'spotipy_data_prep.ipynb' in the ['jupyter_notebooks' folder](https://github.com/catisf/Project-1-Group-2/tree/main/jupyter_notebooks). Alternatively, open the notebook 'spotipy_data_analyses.ipynb' directly, which downloads the data saved in a csv file in the ['output_data' folder](https://github.com/catisf/Project-1-Group-2/tree/main/output_data). Both notebooks include comments and annotations that will explain what the code is doing.
+4. Run notebook 'spotipy_data_prep.ipynb' in the ['jupyter_notebooks' folder](jupyter_notebooks). Alternatively, open the notebook 'spotipy_data_analyses.ipynb' directly, which downloads the data saved in a csv file in the ['output_data' folder](output_data). Both notebooks include comments and annotations that will explain what the code is doing.
    
 
 ## 6. Repository structure
 In this repository you can find:
-- ['jupyter_notebooks' folder](https://github.com/catisf/Project-1-Group-2/tree/main/jupyter_notebooks) containing 2 jupyter notebooks. The notebook "spotipy_data_prep.ipynb" was used for data preparation. It contains the code used to set up permissions to access Spotipy, the list selection and the request for track features and information. The notebook "spotipy_data_analyses.ipynb" was used for all the data analyses. This notebook also includes markdown blocks that set out the aim of the project, explanation of the analyses and conclusions to be derived from them;
-- ['output_data' folder](https://github.com/catisf/Project-1-Group-2/tree/main/output_data) containing a csv file ('spotipy_data.csv') with the data requested from the API, as well as all the plots resulting from the data analyses notebook, in a folder named 'analyses_plots'.
-- ['presentation' folder](https://github.com/catisf/Project-1-Group-2/tree/main/report) containing the slide deck for the presentation of the project
+- ['jupyter_notebooks' folder](jupyter_notebooks) containing 2 jupyter notebooks. The notebook "spotipy_data_prep.ipynb" was used for data preparation. It contains the code used to set up permissions to access Spotipy, the list selection and the request for track features and information. The notebook "spotipy_data_analyses.ipynb" was used for all the data analyses. This notebook also includes markdown blocks that set out the aim of the project, explanation of the analyses and conclusions to be derived from them;
+- ['output_data' folder](output_data) containing a csv file ('spotipy_data.csv') with the data requested from the API, as well as all the plots resulting from the data analyses notebook, in a folder named 'analyses_plots'.
+- ['presentation' folder](report) containing the slide deck for the presentation of the project
 
 
 ## 7. Source code
