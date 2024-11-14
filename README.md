@@ -5,7 +5,7 @@
 ## Project 1 of UoB Data Bootcamp - Group 2
 
 ## Contents
-1. [Project Aim](#1-project-aim)
+1. [Project Overview](#1-project-overview)
 2. [Data Collection and Preparation](#2-data-collection-and-preparation)
 3. [Definitions](#3-definitions)
 4. [Main Conclusions](#4-main-conclusions)
@@ -14,7 +14,7 @@
 7. [Source Code](#7-source-code)
 8. [Collaborators/Team](#8-collaboratorsteam)
 
-## 1. Project Aim
+## 1. Project Overview
 In this project, we aimed to understand **whether music listening habits have changed** in the last 6 years. 
 
 There are two main reasons that lead us to believe music listening habits might have changed:
