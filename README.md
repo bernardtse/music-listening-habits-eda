@@ -126,7 +126,7 @@ Then, you will need to get your Spotify credentials. On the [Spotify's Web API](
 ### 3. Run the code
 Once all the packages have been installed:
 1. Clone the repository.
-2. Open a text editor or VS code and copy your Spotify credentials (client_id and client_secret) onto a file named 'config.py', using the following syntax:
+2. Open a text editor or VS code and copy your Spotify credentials (client_id and client_secret) onto a file named `config.py`, using the following syntax:
 
 ```
 #  Add your API key
@@ -134,22 +134,22 @@ client_id = "ADD YOUR KEY HERE"
 client_secret = "ADD YOUR KEY HERE"
 ```
    
-3. Save the 'config.py' file in the 'jupyter_notebooks' folder in your local repository.
-4. Run notebook 'spotipy_data_prep.ipynb' in the ['jupyter_notebooks' folder](jupyter_notebooks). Alternatively, open the notebook 'spotipy_data_analyses.ipynb' directly, which downloads the data saved in a csv file in the ['output_data' folder](output_data). Both notebooks include comments and annotations that will explain what the code is doing.
+3. Save the `config.py` file in the [`jupyter_notebooks/`](jupyter_notebooks) folder in your local repository.
+4. Run notebook [`spotipy_data_prep.ipynb`](jupyter_notebooks/spotipy_data_prep.ipynb) in the [`jupyter_notebooks/`](jupyter_notebooks) folder. Alternatively, open the notebook [`spotipy_data_analyses.ipynb`](jupyter_notebooks/spotipy_data_analyses.ipynb) directly, which downloads the data saved in a csv file in the [`output_data/`](output_data) folder. Both notebooks include comments and annotations that will explain what the code is doing.
    
 
 ## 6. Repository structure
 In this repository you can find:
-- ['jupyter_notebooks' folder](jupyter_notebooks) containing 2 jupyter notebooks. The notebook "spotipy_data_prep.ipynb" was used for data preparation. It contains the code used to set up permissions to access Spotipy, the list selection and the request for track features and information. The notebook "spotipy_data_analyses.ipynb" was used for all the data analyses. This notebook also includes markdown blocks that set out the aim of the project, explanation of the analyses and conclusions to be derived from them;
-- ['output_data' folder](output_data) containing a csv file ('spotipy_data.csv') with the data requested from the API, as well as all the plots resulting from the data analyses notebook, in a folder named 'analyses_plots'.
-- ['presentation' folder](presentation) containing the slide deck for the presentation of the project.
+- [`jupyter_notebooks/`](jupyter_notebooks) folder containing 2 jupyter notebooks. The notebook [`spotipy_data_prep.ipynb`](jupyter_notebooks/spotipy_data_prep.ipynb) was used for data preparation. It contains the code used to set up permissions to access Spotipy, the list selection and the request for track features and information. The notebook [`spotipy_data_analyses.ipynb`](jupyter_notebooks/spotipy_data_analyses.ipynb) was used for all the data analyses. This notebook also includes markdown blocks that set out the aim of the project, explanation of the analyses and conclusions to be derived from them;
+- [`output_data/`](output_data) folder containing a csv file (`spotipy_data.csv`) with the data requested from the API, as well as all the plots resulting from the data analyses notebook, in a folder named [`analyses_plots/`](output_data/analyses_plots/).
+- [`presentation/`](presentation) folder containing the slide deck for the presentation of the project.
 
 
 ## 7. Source Code
-- Code in the 'spotipy_data_prep.ipynb' jupyter notebook is based on code shared by the instructor, as well as code from [Spotipy documentation](ttps://spotipy.readthedocs.io/en/2.22.1/) and from [here](https://towardsdatascience.com/extracting-song-data-from-the-spotify-api-using-python-b1e79388d50).
+- Code in the [`spotipy_data_prep.ipynb`](jupyter_notebooks/spotipy_data_prep.ipynb) jupyter notebook is based on code shared by the instructor, as well as code from [Spotipy documentation](https://spotipy.readthedocs.io/en/2.22.1/) and from [here](https://towardsdatascience.com/extracting-song-data-from-the-spotify-api-using-python-b1e79388d50).
 - Genre analysis: code to we unpack the artist genre column adapted from [here](https://www.learndatasci.com/solutions/python-pandas-dfexplode/).
-- Code to plot subplots based on [matplotlib gallery](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_demo.html).
-- Code to plot subplots with 2 or more scales based on [matplotlib gallery](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/two_scales.html).
+- Code to plot subplots based on [Matplotlib gallery](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_demo.html).
+- Code to plot subplots with 2 or more scales based on [Matplotlib gallery](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/two_scales.html).
 
 ## 8. Collaborators/Team
 - [Catarina Ferreira](https://github.com/catisf)
