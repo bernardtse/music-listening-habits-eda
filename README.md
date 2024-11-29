@@ -1,8 +1,8 @@
-# EDA: Have music listening habits changed over the last 6 years? 
+# Exploratory Data Analysis: Music Listening Habits on Spotify
 
 ![Photo from above of someone listening to music on their hearphones](readme_images/pexels-kaboompics-com-6399.jpg)
 
-## Project 1 of UoB Data Bootcamp - Group 2
+## Have music listening habits changed over the last 6 years?
 
 ## Contents
 1. [Project Overview](#1-project-overview)
