@@ -141,7 +141,7 @@ client_secret = "ADD YOUR KEY HERE"
 ## 6. Repository structure
 In this repository you can find:
 - [`jupyter_notebooks/`](jupyter_notebooks) folder containing 2 jupyter notebooks. The notebook [`spotipy_data_prep.ipynb`](jupyter_notebooks/spotipy_data_prep.ipynb) was used for data preparation. It contains the code used to set up permissions to access Spotipy, the list selection and the request for track features and information. The notebook [`spotipy_data_analyses.ipynb`](jupyter_notebooks/spotipy_data_analyses.ipynb) was used for all the data analyses. This notebook also includes markdown blocks that set out the aim of the project, explanation of the analyses and conclusions to be derived from them;
-- [`output_data/`](output_data) folder containing a csv file (`spotipy_data.csv`) with the data requested from the API, as well as all the plots resulting from the data analyses notebook, in a folder named [`analyses_plots/`](output_data/analyses_plots/).
+- [`output_data/`](output_data) folder containing a csv file (`spotipy_data.csv`) with the data requested from the API, as well as all the plots resulting from the data analyses notebook, in a folder named [`analyses_plots/`](output_data/analyses_plots).
 - [`presentation/`](presentation) folder containing the slide deck for the presentation of the project.
 
 
