@@ -1,6 +1,6 @@
 # Exploratory Data Analysis: Music Listening Habits on Spotify
 
-![Photo from above of someone listening to music on their hearphones](readme_images/pexels-kaboompics-com-6399.jpg)
+![Photo from above of someone listening to music on their hearphones](readme_images/banner.jpg)
 
 ## Have music listening habits changed over the last 6 years?
 
