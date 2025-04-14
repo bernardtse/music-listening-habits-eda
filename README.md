@@ -43,7 +43,7 @@ The playlists for each year are the following:
 - 2021: https://open.spotify.com/playlist/5GhQiRkGuqzpWZSE7OU4Se
 - 2022: https://open.spotify.com/playlist/56r5qRUv3jSxADdmBkhcz7
 
-Once the playlists were selected, we used the [Spotipy API](https://spotipy.readthedocs.io/en/2.22.1/) - "a lightweight Python library for the Spotify Web API" - to request the following information about each track on the playlist:
+Once the playlists were selected, we used [Spotipy](https://spotipy.readthedocs.io/en/2.22.1/) - "a lightweight Python library for the Spotify Web API" - to request the following information about each track on the playlist:
 - track ID
 - track name 
 - track popularity
